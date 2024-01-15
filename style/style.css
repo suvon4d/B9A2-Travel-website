@@ -7,6 +7,16 @@ main{
     max-width: 81.5%;
     margin: 0px auto;
 }
+.primary-button{
+    color: #FFF;
+    /* text-align: center; */
+    font-size: 1.20rem;
+    font-weight: 800;
+    padding: 14px 35px;
+    border: 0px;
+    border-radius: 8px;
+    background-color: #FF5400;
+}
 .section-heading{
     color: #131318;
     font-size: 2.5rem;
@@ -18,7 +28,55 @@ main{
     font-weight: 400;
     margin: 24px 0px;
 }
+/* baner-section related style */
 
+.baner{
+    width: 1170px;
+    height: 500px;
+    margin: 0px auto;
+    text-align: center;
+    border-radius: 16px;
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%),url(../Images/Group\ 13\ \(1\)\ \(1\).png);
+}
+.baner-section{
+    padding: 106px 185px;
+}
+.baner-heading{
+    color: #FFF;
+    font-size: 4rem;
+    font-weight: 800;
+}
+.baner-description{
+    color: #FFF;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.baner-form{
+    padding: 16px;
+    border-radius: 16px;
+    background-color: #ffffff4b;
+}
+.baner form{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+.baner form input, select, button{
+    padding-left: 15px;
+    border-radius: 8px;
+    background-color: #FFF;
+    width: 174px;
+    height: 52px;
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 16px;
+    font-weight: 400
+}
+.baner-button{
+    color: #FFF;text-align: center;
+    font-size: 1rem;
+    font-weight: 700
+}
 /* populer-section related style */
 .populer-section{
     margin: 100px auto;
@@ -36,28 +94,39 @@ main{
     font-weight: 400;
     margin-top: 16px;
 }
-.populer-section-content button{
-    color: #FFF;
-    text-align: center;
-    font-size: 1.25rem;
-    font-weight: 800;
-    padding: 14px 35px;
-    border: 0px;
-    border-radius: 8px;
-    background-color: #FF5400;
-}
 .populer-section-image{
     border-radius: 16px;
 }
 
 /* media query */
 @media screen and (max-width: 600px) {
+    .baner{
+        max-width: 400px;
+        min-height: 483px;
+        background-position: center;
+    }
+    .baner-section{
+        padding: 5px 5px;
+    }
+    .baner-heading{
+       font-size: 1.37rem;
+    }
+    .baner-description{
+        font-size: 0.87rem;
+    }
+    .baner form{
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+    .baner form input, select, button{
+        width: 255px;
+    }
     .populer-section{
         flex-direction: column;
     }
     .populer-section-image img{
         max-width: 100%;
         margin: 0px auto;
-    }
-    
+    }   
 }
