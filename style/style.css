@@ -154,6 +154,32 @@ main{
     width: 100%;
     height: 100%;
 }
+.Newsletter-section-image{
+    position: relative;
+}
+.discount{
+    position: absolute;
+    bottom: 55px;
+    right: 15px;
+    rotate: -19.628deg;
+    width: 324px;
+    background-color: #FF5400;
+    text-align: center;
+    border-radius: 16px;
+    padding: 5px 10px;
+}
+.discount p{
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+.discount h3{
+    margin-top: 4px;
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 800;
+}
 /* footer section related style */
 .footer{
     background-color:rgba(19, 19, 24, 0.05);
@@ -245,6 +271,19 @@ main{
     }
     .Subscribe-button{
         max-width: 295px;
+    }
+    .discount{
+        position: absolute;
+        bottom: 30px;
+        right: 10px;
+        width: 200px;
+        padding: 0px;
+    }
+    .discount p{
+        font-size: 1rem;
+    }
+    .discount h3{
+        font-size: 1.32rem;
     }
      .footer{
         padding: 20px 10px;
